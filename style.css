@@ -357,15 +357,21 @@ body {
     display: flex;
   }
 }
-@media (min-height: 580px) {
+@media (max-width: 580px) {
   .header .cards .card {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 5px solid gray;
   }
   .header .cards .card .card-body .card-text {
-    font-size: 14px;
-    margin: 0.2rem;
+    font-size: 15px;
+
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+  .header {
+    height: 130vh;
   }
 }
 
@@ -449,6 +455,7 @@ body {
     position: relative;
     bottom: 1.6rem;
     font-size: 0.5rem;
+    font-weight: bold;
   }
   .service .cards .card {
     height: 200px;
